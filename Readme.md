@@ -5,54 +5,26 @@
 `npm install brazilian-string-utils` <br />
 `yarn add brazilian-string-utils`
 
-### Functions
+### Usage
 
-#### currency
+    const value = '0000000000'
+    const cnpj = '00000000000000'
+    const cpf = '000000000000'
+    const myStr = 'a0b0c0'
+    const letters = 'abcd'
 
-`currency(0000000000)`
-<span style="color:gray">// output R$ 00,000,000,00</span>
+    function myFunction() {
+        currency(value) // output R$ 00,000,000,00
+        bankAccount(value) // output 0000000000-0
+        cep(value) // output 00000-000
+        phone(value) // output (00)00000-0000
+        truncate(value, 3) // output 000...
 
-#### bankAccount
+        cnpj(cnpj) // output 00.000.000/0000-00
+        cpf(cpf) // output 000.000.000-00
 
-`bankAccount(0000000000)`
-<span style="color:gray">// output 0000000000-0</span>
+        onlyNumbers(myStr) // output 000
+        onlyLetters(myStr) // output abc
 
-#### cep
-
-`cep(0000000000)`
-<span style="color:gray">// output 00000-000</span>
-
-#### cnpj
-
-`cnpj(00000000000000)`
-<span style="color:gray">// output 00.000.000/0000-00</span>
-
-#### phone
-
-`phone(0000000000)`
-<span style="color:gray">// output (00)00000-0000</span>
-
-#### cpf
-
-`cpf(000000000000)`
-<span style="color:gray">// output 000.000.000-00</span>
-
-#### onlyNumbers
-
-`onlyNumbers(a0b0c0)`
-<span style="color:gray">// output 000</span>
-
-#### onlyLetters
-
-`onlyLetters(a0b0c0)`
-<span style="color:gray">// output abc</span>
-
-#### capitalize
-
-`capitalize(abc)`
-<span style="color:gray">// output Abc</span>
-
-#### truncate
-
-`truncate(0000000000, 3)`
-<span style="color:gray">// output 000...</span>
+        capitalize(letters) // output Abcd
+    }
