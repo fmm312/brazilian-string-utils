@@ -1,11 +1,8 @@
 {
   "name": "brazilian-string-utils",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "JavaScript library to convert string to different Brazilian formats",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": ["javascript", "string", "format", "utils", "regex"],
   "author": "Felipe Menezes",
   "license": "ISC"
